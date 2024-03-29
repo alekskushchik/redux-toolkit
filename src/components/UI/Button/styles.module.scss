@@ -1,0 +1,123 @@
+// Colors
+$CeruleanBlue: #2D60C5;
+$Blueberry: #4B7EE4;
+$RoyalBlue: #3D76E7;
+$White: #FFFFFF;
+$AntiFlashWhite: #F0F0F0;
+$Gainsboro: #DEDEDE;
+$LightSilver: #D3D7E1;
+$SpanishGrey: #9A9A9A;
+$CoolGrey: #8A94AC;
+
+.btn {
+  width: auto;
+  min-width: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Open Sans', arial, sans-serif;
+  text-align: center;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+
+  // button size
+  &--large {
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &--medium {
+    padding: 6px 16px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  &--small {
+    padding: 4px 16px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  // button type
+  &--primary {
+    color: $White;
+    background-color: $CeruleanBlue;
+
+    &:hover {
+      background: $RoyalBlue;
+      opacity: 0.9;
+    }
+
+    &:active {
+      border: 2px solid $CeruleanBlue;
+      box-shadow: 0px 4px 20px rgba($color: $Blueberry, $alpha: 0.8);
+    }
+
+    &:disabled {
+      background-color: $CoolGrey;
+      pointer-events: none;
+    }
+  }
+
+  &--secondary {
+    color: $CeruleanBlue;
+    background-color: $AntiFlashWhite;
+
+    &:hover {
+      background-color: $Gainsboro;
+    }
+
+    &:active {
+      background: $AntiFlashWhite;
+      border: 2px solid $Gainsboro;
+    }
+
+    &:disabled {
+      color: $CoolGrey;
+      background-color: $LightSilver;
+      pointer-events: none;
+    }
+  }
+
+  &--tertiary {
+    color: $CeruleanBlue;
+    background-color: transparent;
+
+    &:disabled {
+      color: $CoolGrey;
+      border: 2px solid $LightSilver;
+      pointer-events: none;
+    }
+  }
+
+  &--reset {
+    color: $SpanishGrey;
+    background-color: transparent;
+  }
+
+  &--outlined {
+    color: $RoyalBlue;
+    background-color: transparent;
+    border: 2px solid $CeruleanBlue;
+
+    &:disabled {
+      background-color: $CoolGrey;
+      pointer-events: none;
+    }
+  }
+
+  &--link {
+    color: $RoyalBlue;
+    background-color: transparent;
+    border: 2px solid transparent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

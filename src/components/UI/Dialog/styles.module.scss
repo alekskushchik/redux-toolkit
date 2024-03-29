@@ -1,0 +1,80 @@
+$DarkCharcoal: #333333;
+$RaisinBlack: #222222;
+$White: #FFFFFF;
+$LightSilver: #D3D7E1;
+
+.modalMask {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: $DarkCharcoal, $alpha: 0.8);
+  transition: position 0.3s ease-in-out;
+
+  .modal {
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    border: none;
+    background-color: $White;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0px 2px 8px $DarkCharcoal;
+
+    @media screen and (max-width: 430px) {
+      width: calc(100% - 30px);
+    }
+
+    .modalHeader {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $RaisinBlack;
+      color: $White;
+
+      .modalTitle {
+        flex: 1;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        text-align: center;
+
+        @media screen and (max-width: 430px) {
+          font-size: 15px;
+          line-height: 23px;
+        }
+      }
+
+      .closeBtn {
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    .modalContent {
+      padding: 20px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      color: $RaisinBlack;
+
+      @media screen and (max-width: 430px) {
+        font-size: 15px;
+        line-height: 23px;
+      }
+    }
+
+    .modalFooter {
+      padding: 15px 20px;
+      border-top: 1px solid $LightSilver;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

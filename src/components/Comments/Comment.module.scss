@@ -1,0 +1,54 @@
+.comment {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #272727;
+  border-radius: 6px;
+
+  .editCommentContainer {
+    position: relative;
+
+    .editCommentInput {
+      width: 100%;
+      padding: 0;
+      font-size: 1em;
+      color: #ffffff;
+      background-color: #272727;
+      outline: transparent;
+      border: none;
+    }
+
+    button[type="submit"] {
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+
+  &__body {
+    font-size: 1em;
+
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .like {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__icon {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$DarkCharcoal: #333333;
+$RaisinBlack: #222222;
+$White: #FFFFFF;
+$LightSilver: #D3D7E1;
+
+.activityLogMask {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: $DarkCharcoal, $alpha: 0.8);
+
+  .activityLog {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    background-color: $White;
+    font-family: "Open Sans", sans-serif;
+    color: $RaisinBlack;
+
+    .activityLogHeader {
+      background-color: $RaisinBlack;
+      color: $White;
+    }
+
+    .activityLogContent {
+      padding: 20px;
+
+      .scoreTypesSection {
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid #E2E4EA;
+        border-bottom: 1px solid #E2E4EA;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .scoreTypeItemContainer {
+          padding: 15px;
+          height: auto;
+          background-color: #E2E4EA;
+          border-radius: 6px;
+        }
+      }
+    }
+
+  }
+}
